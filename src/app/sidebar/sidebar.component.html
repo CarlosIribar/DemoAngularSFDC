@@ -1,0 +1,21 @@
+<div class="demo-only">
+  <nav class="slds-nav-vertical" aria-label="Sub page">
+    <div class="slds-nav-vertical__section">
+      <h2 id="entity-header" class="slds-nav-vertical__title slds-text-title_caps">Categoria</h2>
+      <ul>
+        <li [ngClass]="{'slds-is-active': level == 'All'}" class="slds-nav-vertical__item" (click)="sfdc.setLevel('All')">
+          <a href="javascript:void(0);" class="slds-nav-vertical__action" aria-describedby="entity-header" aria-current="page">Todos</a>
+        </li>
+        <li [ngClass]="{'slds-is-active': level == 'Primary'}" class="slds-nav-vertical__item slds-is-active" (click)="sfdc.setLevel('Primary')">
+          <a href="javascript:void(0);" class="slds-nav-vertical__action" aria-describedby="entity-header">Primarios</a>
+        </li>
+        <li [ngClass]="{'slds-is-active': level == 'Secondary'}" class="slds-nav-vertical__item" (click)="sfdc.setLevel('Secondary')">
+          <a href="javascript:void(0);" class="slds-nav-vertical__action" aria-describedby="entity-header">Secundarios</a>
+        </li>
+        <li [ngClass]="{'slds-is-active': level == 'Tertiary'}" class="slds-nav-vertical__item" (click)="sfdc.setLevel('Tertiary')">
+          <a href="javascript:void(0);" class="slds-nav-vertical__action" aria-describedby="entity-header">Terciary</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
